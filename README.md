@@ -1,29 +1,16 @@
-# 💼 Fintech Dashboard Backend
+# FerrisLedger
 
-A role-based finance backend built using **Rust + Axum + PostgreSQL**, designed to demonstrate clean backend architecture, secure access control, and meaningful data processing.
+A role-based finance backend built using **Rust + Axum + PostgreSQL**, demonstrating backend architecture, secure access control, and meaningful data processing.
 
-This project focuses on **clarity, correctness, and real-world backend patterns** rather than unnecessary abstraction.
+## Features
 
----
-
-## 🎯 Problem Context
-
-This backend was built for a **finance dashboard system** where:
-
-* Multiple users interact with financial data
-* Each user has a **role with restricted access**
-* The system supports:
+* Multiple users can interact with financial data 
+* **role with restricted access** for every user
+* Current System Support:
 
   * Transaction management
   * Role-based permissions
   * Aggregated financial insights
-
-The goal was to build a system that is:
-
-* **Logically sound**
-* **Secure**
-* **Maintainable**
-
 ---
 
 
@@ -189,7 +176,7 @@ amount | type | category | created_at | description | user_id
 
 ```bash id="q78t7k"
 git clone <repo>
-cd zorvyn-backend
+cd FerrisLedger-backend
 ```
 
 ---
@@ -199,7 +186,7 @@ cd zorvyn-backend
 Create `.env` file:
 
 ```env id="n1lygh"
-DATABASE_URL=postgres://user:password@localhost/zorvyn_db
+DATABASE_URL=postgres://user:password@localhost/FerrisLedger_db
 JWT_SECRET=your_secret_key
 ```
 
@@ -208,7 +195,7 @@ JWT_SECRET=your_secret_key
 ## 3️⃣ Create Database
 
 ```bash id="9k7a5s"
-createdb zorvyn_db
+createdb FerrisLedger_db
 ```
 
 ---
