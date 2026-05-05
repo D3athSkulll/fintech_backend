@@ -1,9 +1,9 @@
 -- USERS
 INSERT INTO users (id, name, email, password_hash, role, created_at)
 VALUES
-  (gen_random_uuid(), 'Admin1', 'admin1@example.com', '123456', 'admin', NOW()),
-  (gen_random_uuid(), 'Analyst1', 'analyst1@example.com', '123456', 'analyst', NOW()),
-  (gen_random_uuid(), 'Viewer1', 'viewer1@example.com', '123456', 'viewer', NOW());
+  (gen_random_uuid(), 'Admin1', 'admin1@example.com', '$argon2id$v=19$m=19456,t=2,p=1$uVmEte14OjUhdEFtSP2gGQ$uueycoZjRsQ2NH/S5hwujzeeRLMuyDKAUbLcJ4KF9jQ', 'admin', NOW()),
+  (gen_random_uuid(), 'Analyst1', 'analyst1@example.com', '$argon2id$v=19$m=19456,t=2,p=1$uVmEte14OjUhdEFtSP2gGQ$uueycoZjRsQ2NH/S5hwujzeeRLMuyDKAUbLcJ4KF9jQ', 'analyst', NOW()),
+  (gen_random_uuid(), 'Viewer1', 'viewer1@example.com', '$argon2id$v=19$m=19456,t=2,p=1$uVmEte14OjUhdEFtSP2gGQ$uueycoZjRsQ2NH/S5hwujzeeRLMuyDKAUbLcJ4KF9jQ ', 'viewer', NOW());
 
 -- TRANSACTIONS (use subquery to link users)
 -- =========================
