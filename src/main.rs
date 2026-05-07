@@ -29,11 +29,16 @@ async fn main(){
         .merge(dashboard_routes())
         .with_state(state.clone());
 
-    let listener = tokio::net::TcpListener::bind("127.0.0.1:3000")
+    let port = std::env::var("PORT")
+        .unwrap_or_else(|_| "3000".to_string());
+    
+    let addr = format!("0.0.0.0:{}", port);
+
+    let listener = tokio::net::TcpListener::bind(&addr)
         .await
         .unwrap();
 
-    println!("Server running on http://127.0.0.1:3000");
+    println!("Server online!!");
 
     axum::serve(listener, app).await.unwrap();
 
