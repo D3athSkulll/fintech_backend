@@ -47,7 +47,7 @@ async fn main(){
 async fn root(State(state): State<AppState>)-> String{
     format!(
 r#"
-🚀 Zorvyn Finance Backend is running!
+🚀 FerrisLedger Finance Backend is running!
 
 📡 Server Info:
 - DB Pool Size: {}
