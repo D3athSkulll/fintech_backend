@@ -13,7 +13,8 @@ A role-based finance backend built using **Rust + Axum + PostgreSQL**, demonstra
   * Aggregated financial insights
 ---
 
-
+## Project Flow
+![Repository Diagram](https://raw.githubusercontent.com/D3athSkulll/FerrisLedger/main/diagram.png)
 ## 📂 Project Structure
 
 ```text id="7j7hzr"
